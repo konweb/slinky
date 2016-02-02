@@ -21,7 +21,7 @@ Published under the MIT license
 
 		var move = function (menu, next, callback) {
 			var width = menu.outerWidth(),
-				left = Math.round(parseInt(menu[0].style.left)) || 0;
+					left  = Math.round(parseInt(menu[0].style.left)) || 0;
 
 			// Use multiples of 100% for responsive animation
 
@@ -48,8 +48,7 @@ Published under the MIT license
 			// The root node is where animation happens
 
 			var menu = $(this),
-				root = menu.children().first(),
-				parentLable = null;
+					root = menu.children().first();
 
 			// Add .next class to links with sub menus
 
@@ -61,8 +60,8 @@ Published under the MIT license
 				// Create a link with label from parent
 
 				$('li > ul', menu).each(function () {
-					var label = menu.parent().find('a').first().text(),
-						backLink = $('<a>').text(label).prop('href', '#').addClass('back');
+					var label    = menu.parent().find('a').first().text(),
+							backLink = $('<a>').text(label).prop('href', '#').addClass('back');
 
 					menu.prepend(backLink);
 				});
