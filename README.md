@@ -1,6 +1,6 @@
 # Slinky+
 
-[jQuery sliding menu](https://github.com/alizahid/slinky/)を少し改良ver。
+[jQuery sliding menu](https://github.com/alizahid/slinky/)を少し改良したver。
 
 オプション'label'に'parent'を追加し、labelに現在の階層が表示できるよう機能を追加。
 
