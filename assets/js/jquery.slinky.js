@@ -48,7 +48,8 @@ Published under the MIT license
 			// The root node is where animation happens
 
 			var menu = $(this),
-				root = menu.children().first();
+				root = menu.children().first(),
+				parentLable = null;
 
 			// Add .next class to links with sub menus
 
@@ -95,6 +96,10 @@ Published under the MIT license
 
 					if (settings.resize) {
 						resize(menu, a.next());
+					}
+
+					if (settings.label === 'parent') {
+						a.next('ul').find('a.back').text(a.text());
 					}
 				} else if (a.hasClass('back')) {
 					move(root, false, function () {
