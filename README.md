@@ -1,14 +1,14 @@
-# Slinky
+# Slinky+
 
-jQuery sliding menu
+[jQuery sliding menu](https://github.com/alizahid/slinky/)を少し改良ver。
 
-A light-weight, responsive, mobile-like menu plugin
+オプション'label'に'parent'を追加し、labelに現在の階層が表示できるよう機能を追加。
 
-[Demo](http://alizahid.github.io/slinky)
+[Demo](http://konweb.github.io/slinky/)
 
 ### Installation
 
-Download the [latest version](https://github.com/alizahid/slinky/archive/master.zip). The files you need are;
+Download the [latest version](https://github.com/konweb/slinky/archive/master.zip). The files you need are;
 
 - assets/js/jquery.slinky.js
 - assets/css/jquery.slinky.css
@@ -21,6 +21,6 @@ Download the [latest version](https://github.com/alizahid/slinky/archive/master.
 
 Option | Default value | Description
 ------ | ------------- | -----------
-`label` | 'Back' | Label for the back button. Set to `true` to use the link's own label
+`label` | 'Back \| 'parent' | Label for the back button. Set to `true` to use the link's own label
 `speed` | `300` | Animation speed in milliseconds
 `resize` | `true` | Resize menu height to match content
